@@ -155,7 +155,7 @@ type TranslationResponse struct {
 }
 
 func translateByAPI(text string, sourceLang string, targetLang string, authKey string) (string, error) {
-	url := "https://api-free.deepl.com/v2/translate"
+	url := "https://api.deepl.com/v1/translate"
 	textArray := strings.Split(text, "\n")
 
 	payload := PayloadAPI{
